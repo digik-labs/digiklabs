@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Tickbit</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  :root {
+    --bg: #fafafa;
+    --surface: #ffffff;
+    --text: #1a1a2e;
+    --muted: #6b7280;
+    --accent: #5B4A8A;
+    --border: #e5e7eb;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+
+  .header .updated {
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    color: var(--text);
+  }
+
+  p {
+    margin-bottom: 16px;
+    color: #374151;
+  }
+
+  ul {
+    margin-bottom: 16px;
+    padding-left: 24px;
+  }
+
+  li {
+    margin-bottom: 8px;
+    color: #374151;
+  }
+
+  strong { color: var(--text); }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 24px;
+    font-size: 15px;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+  }
+
+  th {
+    background: #f3f4f6;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  a:hover { text-decoration: underline; }
+
+  .footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f0f17;
+      --surface: #1a1a2e;
+      --text: #f0f0f5;
+      --muted: #9ca3af;
+      --accent: #a78bfa;
+      --border: #2d2d44;
+    }
+    p, li { color: #d1d5db; }
+    th { background: #1f1f33; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>Privacy Policy — Tickbit</h1>
+    <p class="updated">Last updated: February 16, 2025 &middot; Developer: Digik Labs</p>
+  </div>
+
+  <h2>Overview</h2>
+  <p>Tickbit ("the App") is a habit and reminder tracking application. We are committed to protecting your privacy. This policy explains what data the App accesses, how it is used, and your rights.</p>
+
+  <h2>Data We Do NOT Collect</h2>
+  <ul>
+    <li>We do <strong>not</strong> collect personal information (name, email, phone number)</li>
+    <li>We do <strong>not</strong> use analytics or tracking SDKs</li>
+    <li>We do <strong>not</strong> serve advertisements</li>
+    <li>We do <strong>not</strong> sell, share, or transfer your data to third parties</li>
+    <li>We do <strong>not</strong> have a backend server — your data never leaves your device unless you explicitly choose to back it up</li>
+  </ul>
+
+  <h2>Data Stored on Your Device</h2>
+  <p>All App data is stored <strong>locally on your device</strong> in an encrypted SQLite database. This includes:</p>
+  <ul>
+    <li>Reminders you create (title, schedule, category)</li>
+    <li>Completion logs (when you mark reminders as done or skipped)</li>
+    <li>App settings and preferences</li>
+  </ul>
+  <p>This data is never transmitted to any server unless you opt in to cloud backup (see below).</p>
+
+  <h2>Optional: Google Drive Backup</h2>
+  <p>If you choose to enable Google Drive backup, the App will:</p>
+  <ul>
+    <li>Request access to your Google account via Google Sign-In</li>
+    <li>Store an encrypted copy of your database in your Google Drive's <strong>app-specific folder</strong> (not visible in your regular Drive files)</li>
+    <li>This data is encrypted with AES-256 before upload</li>
+    <li>Only you can access this data through the App — we cannot read, access, or retrieve your backup files</li>
+  </ul>
+  <p><strong>What Google receives:</strong> Your Google account email and name are used solely to authenticate the backup connection. We do not store or transmit this information to any server.</p>
+  <p>You can disconnect Google Drive at any time from the App's Settings screen, which stops all cloud backup activity. You can delete the app data folder from your Google Drive at any time.</p>
+
+  <h2>Optional: Speech-to-Text</h2>
+  <p>If you use voice input to create reminders, audio is processed by your device's built-in speech recognition service (Google Speech Services on Android, Siri on iOS). Audio is handled by the operating system and is subject to Google's or Apple's respective privacy policies. The App does not record, store, or transmit audio.</p>
+
+  <h2>In-App Purchases</h2>
+  <p>The App offers a premium upgrade ("Tickbit Pro") processed through Google Play Billing (Android) or the App Store (iOS). Purchase transactions are handled entirely by Google or Apple. We use RevenueCat to manage entitlements, which processes:</p>
+  <ul>
+    <li>An anonymous user ID (device-generated, not linked to your identity)</li>
+    <li>Purchase receipt validation</li>
+  </ul>
+  <p>RevenueCat's privacy policy: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">https://www.revenuecat.com/privacy</a></p>
+
+  <h2>Notifications</h2>
+  <p>The App sends local notifications to remind you of scheduled tasks. These notifications are generated entirely on your device and do not involve any external server.</p>
+
+  <h2>Permissions Used</h2>
+  <table>
+    <thead>
+      <tr><th>Permission</th><th>Purpose</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Notifications</td><td>Deliver reminder alerts</td></tr>
+      <tr><td>Exact Alarm</td><td>Schedule reminders at precise times</td></tr>
+      <tr><td>Boot Completed</td><td>Reschedule reminders after device restart</td></tr>
+      <tr><td>Vibrate</td><td>Vibration feedback for alarms</td></tr>
+      <tr><td>Wake Lock</td><td>Ensure alarm notifications display</td></tr>
+      <tr><td>Internet</td><td>Google Drive backup (optional)</td></tr>
+      <tr><td>Microphone</td><td>Voice input for creating reminders (optional)</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Children's Privacy</h2>
+  <p>The App is not directed at children under 13. We do not knowingly collect data from children.</p>
+
+  <h2>Data Deletion</h2>
+  <p>Since all data is stored locally on your device:</p>
+  <ul>
+    <li><strong>Uninstalling the App</strong> deletes all local data</li>
+    <li><strong>Google Drive backups</strong> can be removed from your Google Drive settings (Google Drive → Settings → Manage Apps → Tickbit → Delete hidden app data)</li>
+    <li>You can also delete all data from within the App by using the Restore Backup feature with an empty database</li>
+  </ul>
+
+  <h2>Changes to This Policy</h2>
+  <p>We may update this policy from time to time. Changes will be reflected in the "Last updated" date above. Continued use of the App after changes constitutes acceptance.</p>
+
+  <h2>Contact</h2>
+  <p>If you have questions about this privacy policy, contact us at:</p>
+  <p><strong>Developer:</strong> Digik Labs</p>
+
+  <div class="footer">
+    &copy; 2025 Digik Labs. All rights reserved.
+  </div>
+
+</div>
+</body>
+</html>
