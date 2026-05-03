@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Tracker — Privacy Policy</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.7;
+      color: #333;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: #faf9fc;
+    }
+    h1 { color: #5E4F7A; font-size: 28px; margin-bottom: 8px; }
+    h2 { color: #7C6FA0; font-size: 20px; margin-top: 32px; margin-bottom: 8px; }
+    p, li { font-size: 15px; margin-bottom: 12px; }
+    ul { padding-left: 24px; }
+    .date { color: #888; font-size: 13px; margin-bottom: 32px; }
+    a { color: #7C6FA0; }
+  </style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="date">Last updated: May 4, 2026</p>
+
+<p><strong>Portfolio Tracker</strong> ("the Extension") is a Chrome browser extension that aggregates investment portfolio data from supported brokerage sites into a single side panel. Your privacy is important to us. This policy explains what data the Extension collects and how it is used.</p>
+
+<h2>1. Data We Collect</h2>
+<p>Portfolio Tracker is designed with a <strong>privacy-first approach</strong>. All data stays on your device:</p>
+<ul>
+  <li><strong>Portfolio data</strong> — Current value, holdings, P&amp;L, and invested value read from supported brokerage sites using your existing login session. This data is stored locally on your device only.</li>
+  <li><strong>Exchange rate</strong> — A single API call is made to fetch the current USD/INR exchange rate for currency conversion display. No personal data is sent in this request.</li>
+  <li><strong>Settings</strong> — Your display preferences (currency, refresh interval, alert thresholds) are stored locally in Chrome's storage API.</li>
+</ul>
+
+<h2>2. Data Stored on Your Device</h2>
+<p>The following data is stored <strong>locally on your device only</strong> using Chrome's local storage API:</p>
+<ul>
+  <li>Portfolio snapshots and history (for trend charts)</li>
+  <li>Holdings data per brokerage source</li>
+  <li>User settings and preferences</li>
+  <li>Cached exchange rate</li>
+</ul>
+<p>This data <strong>never leaves your device</strong> and is not transmitted to us or any third party.</p>
+
+<h2>3. Permissions Used</h2>
+<ul>
+  <li><strong>cookies</strong> — Used solely to authenticate API requests to brokerage sites using your existing logged-in session. Cookies are never stored, copied, or transmitted outside the brokerage domain.</li>
+  <li><strong>storage / unlimitedStorage</strong> — Used to save portfolio data and history locally on your device.</li>
+  <li><strong>scripting</strong> — Used to inject content scripts into supported brokerage sites to read your portfolio data from the page.</li>
+  <li><strong>tabs</strong> — Used to detect when you are on a supported brokerage site to trigger a data refresh.</li>
+  <li><strong>alarms</strong> — Used to schedule automatic portfolio refresh at your chosen interval (daily, weekly, or monthly).</li>
+  <li><strong>notifications</strong> — Used to alert you when your portfolio value changes beyond a threshold you configure. Notifications are generated locally.</li>
+  <li><strong>sidePanel</strong> — The Extension's primary UI is displayed in Chrome's side panel.</li>
+</ul>
+
+<h2>4. Third-Party Services</h2>
+<ul>
+  <li><strong>Exchange rate API</strong> — A public exchange rate endpoint is queried periodically to convert portfolio values between INR and USD. No personal data is included in this request.</li>
+  <li><strong>Supported brokerages</strong> — The Extension reads data directly from Zerodha, Groww, Paytm Money, MFCentral, Fidelity, INDMoney, NPS, and EPF using your existing authenticated session. No credentials are collected or stored by the Extension.</li>
+</ul>
+
+<h2>5. What We Do Not Do</h2>
+<p>Portfolio Tracker does <strong>not</strong>:</p>
+<ul>
+  <li>Collect your name, email, phone number, or any personal identifiers</li>
+  <li>Transmit your portfolio data to any external server</li>
+  <li>Store or transmit your brokerage login credentials or cookies externally</li>
+  <li>Use analytics, tracking, or advertising SDKs</li>
+  <li>Execute remote code — all scripts are bundled within the extension package</li>
+  <li>Share or sell any data to third parties</li>
+</ul>
+
+<h2>6. Data Deletion</h2>
+<p>Since all data is stored locally on your device, you can delete it at any time by:</p>
+<ul>
+  <li>Using the "Clear all data" option in the Extension's Settings tab</li>
+  <li>Removing the Extension from Chrome</li>
+  <li>Clearing Chrome's extension storage via <code>chrome://settings/siteData</code></li>
+</ul>
+
+<h2>7. Changes to This Policy</h2>
+<p>We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated date.</p>
+
+<h2>8. Contact</h2>
+<p>If you have questions about this privacy policy, please contact us at:</p>
+<p><strong>Email:</strong> <a href="mailto:digiklabs@gmail.com">digiklabs@gmail.com</a></p>
+
+</body>
+</html>
