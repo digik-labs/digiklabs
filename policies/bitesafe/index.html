@@ -21,21 +21,25 @@
     ul { padding-left: 24px; }
     .date { color: #888; font-size: 13px; margin-bottom: 32px; }
     a { color: #7C6FA0; }
+    .nav { margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; font-size: 14px; }
+    .nav a { margin-right: 16px; }
   </style>
 </head>
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="date">Last updated: February 21, 2026</p>
+<p class="date">Last updated: May 10, 2026</p>
 
-<p><strong>BiteSafe</strong> ("the App") is a food product scanner that helps you understand the health profile of packaged foods. Your privacy is important to us. This policy explains what data the App collects and how it is used.</p>
+<p><strong>BiteSafe</strong> ("the App") is a food product scanner developed by Digik Labs. Your privacy is important to us. This policy explains what data the App collects, how it is used, and your rights.</p>
 
 <h2>1. Data We Collect</h2>
-<p>BiteSafe is designed with a <strong>privacy-first approach</strong>. We collect minimal data:</p>
+<p>BiteSafe is designed with a <strong>privacy-first approach</strong>:</p>
 <ul>
-  <li><strong>Camera access</strong> — Used solely to scan product barcodes and photograph ingredient labels. Images are processed on-device and are never uploaded to any server.</li>
-  <li><strong>Photo library access</strong> — Used only when you choose to pick a barcode image from your gallery. Images are not stored or transmitted.</li>
-  <li><strong>Internet access</strong> — Used to fetch product data from the <a href="https://world.openfoodfacts.org/" target="_blank">Open Food Facts</a> public database. No personal data is sent in these requests.</li>
+  <li><strong>No account required</strong> — the App works without sign-in or registration.</li>
+  <li><strong>No personal data collected</strong> — we do not ask for your name, email, phone number, or location.</li>
+  <li><strong>Camera access</strong> — used solely to scan product barcodes and photograph ingredient labels. Images are processed on-device and are never uploaded to any server.</li>
+  <li><strong>Photo library access</strong> — used only when you choose to pick a label image from your gallery. Images are not stored or transmitted.</li>
+  <li><strong>Internet access</strong> — used to fetch product data, display ads, and power AI features.</li>
 </ul>
 
 <h2>2. Data Stored on Your Device</h2>
@@ -43,8 +47,9 @@
 <ul>
   <li>Scan history (products you've scanned)</li>
   <li>Favorite products</li>
-  <li>Dietary preferences (e.g., vegetarian, vegan, diabetic)</li>
-  <li>Theme preference (light/dark mode)</li>
+  <li>Family member profiles and dietary preferences</li>
+  <li>Grocery list items</li>
+  <li>Theme preference and language setting</li>
   <li>Onboarding completion status</li>
 </ul>
 <p>This data <strong>never leaves your device</strong> and is not transmitted to us or any third party.</p>
@@ -52,40 +57,63 @@
 <h2>3. Third-Party Services</h2>
 <p>The App uses the following third-party services:</p>
 <ul>
-  <li><strong>Open Food Facts API</strong> — To retrieve product information. Their privacy policy is available at <a href="https://world.openfoodfacts.org/privacy" target="_blank">openfoodfacts.org/privacy</a>.</li>
-  <li><strong>Google AdMob</strong> — To display banner advertisements in the free version. AdMob may collect device identifiers and ad interaction data in accordance with <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>. Premium subscribers do not see ads.</li>
-  <li><strong>Google ML Kit (on-device)</strong> — For text recognition (OCR) of ingredient labels. All processing happens on-device; no data is sent to Google's servers.</li>
+  <li><strong>Open Food Facts API</strong> — to retrieve product information when you scan a barcode. Only the barcode number is sent. No personal data is included. See <a href="https://world.openfoodfacts.org/privacy" target="_blank">Open Food Facts Privacy Policy</a>.</li>
+  <li><strong>Firebase Analytics</strong> — to understand app usage patterns (e.g., which features are used most, crash-free rates). Firebase Analytics collects anonymous usage data, device type, and app version. No personally identifiable information is collected. See <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy</a>.</li>
+  <li><strong>Firebase AI (Gemini)</strong> — if you use the AI Health Coach feature, your product's ingredient list and score are sent to Google's Gemini API via Firebase to generate insights. No personal data is included in these requests.</li>
+  <li><strong>Firebase App Check</strong> — verifies the App's authenticity to protect backend services from abuse. Does not collect personal data.</li>
+  <li><strong>Google AdMob</strong> — displays banner advertisements in the free version. AdMob may collect device identifiers and ad interaction data in accordance with <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>. Premium subscribers do not see ads.</li>
+  <li><strong>RevenueCat</strong> — manages in-app subscriptions. RevenueCat processes purchase data through Google Play Billing. See <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy</a>.</li>
+  <li><strong>Google ML Kit (on-device)</strong> — for text recognition (OCR) of ingredient labels. All processing happens on-device; no images are sent to any server.</li>
 </ul>
 
-<h2>4. Personal Information</h2>
+<h2>4. Analytics Data</h2>
+<p>We use Firebase Analytics to collect <strong>anonymous, aggregated</strong> usage data including:</p>
+<ul>
+  <li>Number of scans performed</li>
+  <li>Features used (compare, share, favorites, AI insights)</li>
+  <li>Screen views and navigation patterns</li>
+  <li>App version and device type</li>
+  <li>Crash and error reports</li>
+</ul>
+<p>This data is <strong>not linked to any personal identity</strong>. We use it solely to improve the App. You can opt out of analytics by disabling "Usage & diagnostics" in your device's Google settings.</p>
+
+<h2>5. Personal Information</h2>
 <p>BiteSafe does <strong>not</strong>:</p>
 <ul>
   <li>Require account creation or login</li>
   <li>Collect your name, email, phone number, or any personal identifiers</li>
   <li>Track your location</li>
   <li>Share or sell any data to third parties</li>
-  <li>Use analytics or tracking SDKs (other than AdMob for ad serving)</li>
+  <li>Use fingerprinting or cross-app tracking</li>
 </ul>
 
-<h2>5. Children's Privacy</h2>
+<h2>6. Children's Privacy</h2>
 <p>The App is not directed at children under 13. We do not knowingly collect any personal information from children.</p>
 
-<h2>6. In-App Purchases</h2>
-<p>BiteSafe offers an optional premium subscription. Purchase transactions are handled entirely by Google Play or Apple App Store. We do not collect or store any payment information.</p>
+<h2>7. In-App Purchases</h2>
+<p>BiteSafe offers optional premium subscriptions managed through Google Play Billing and RevenueCat. We do not collect or store any payment information directly. All transactions are processed by Google Play.</p>
 
-<h2>7. Data Deletion</h2>
-<p>Since all data is stored locally on your device, you can delete it at any time by:</p>
+<h2>8. Data Deletion</h2>
+<p>Since all user data is stored locally on your device, you can delete it at any time by:</p>
 <ul>
-  <li>Clearing the app's data in your device settings</li>
-  <li>Uninstalling the app</li>
+  <li>Clearing the App's data in your device settings (Settings → Apps → BiteSafe → Clear Data)</li>
+  <li>Uninstalling the App</li>
 </ul>
+<p>For more details, see our <a href="deletion.html">Data Deletion Instructions</a>.</p>
 
-<h2>8. Changes to This Policy</h2>
+<h2>9. Changes to This Policy</h2>
 <p>We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated date.</p>
 
-<h2>9. Contact</h2>
+<h2>10. Contact</h2>
 <p>If you have questions about this privacy policy, please contact us at:</p>
-<p><strong>Email:</strong> <a href="mailto:bitesafe.app@gmail.com">digiklabs@gmail.com</a></p>
+<p><strong>Email:</strong> <a href="mailto:digiklabs@gmail.com">digiklabs@gmail.com</a></p>
+<p><strong>Developer:</strong> Digik Labs</p>
+
+<div class="nav">
+  <a href="terms.html">Terms of Service</a>
+  <a href="deletion.html">Data Deletion</a>
+  <a href="https://play.google.com/store/apps/details?id=com.bitesafe.app">Google Play</a>
+</div>
 
 </body>
 </html>
